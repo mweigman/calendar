@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+
+</head>
+<body>
+<div class="container w-50">
+    <fieldset>
+        <legend id="schedule">My Schedule</legend>
+        <form>
+            <h3>Choose a day to view schedule</h3>
+            <label for="monday">Monday</label>
+            <input type="radio" id="monday" name="day" value="Monday">
+            <br>
+            <label for="tuesday">Tuesday</label>
+            <input type="radio" id="tuesday" name="day" value="Tuesday">
+            <br>
+            <label for="wednesday">Wednesday</label>
+            <input type="radio" id="wednesday" name="day" value="Wednesday">
+            <br>
+            <label for="thursday">Thursday</label>
+            <input type="radio" id="thursday" name="day" value="Thursday">
+            <br>
+            <label for="friday">Friday</label>
+            <input type="radio" id="friday" name="day" value="Friday">
+            <br>
+            <label for="saturday">Saturday</label>
+            <input type="radio" id="saturday" name="day" value="Saturday">
+            <br>
+            <label for="sunday">Sunday</label>
+            <input type="radio" id="sunday" name="day" value="Sunday">
+            <br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend id="days">What to do today:</legend>
+
+        <table style="width:100%">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+                <br>
+
+            </tr>
+            <tr>
+                <br>
+                <td id="task1"></td>
+                <td id="time1"></td>
+            </tr>
+
+            <tr>
+                <br>
+                <td id="task2"></td>
+                <td id="time2"></td>
+            </tr>
+        </table>
+
+    </fieldset>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"> </script>
+<script src="calendar.js"> </script>
+</html>
